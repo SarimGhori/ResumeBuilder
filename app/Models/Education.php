@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Resume;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Education extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'resume_id',
         'degree',
